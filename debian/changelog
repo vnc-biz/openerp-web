@@ -1,0 +1,5 @@
+openerp-web (6.1.1.2~precise0) precise; urgency=low
+
+  * Ubuntu packaging
+
+ -- Enrico Weigelt, metux IT service <weigelt@metux.de>  Sat, 24 Jun 2012 16:34:00 +0200

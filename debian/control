@@ -1,0 +1,100 @@
+Source: openerp-web
+Section: net
+Priority: optional
+Maintainer: Enrico Weigelt, metux ITS <weigelt@metux.de>
+Build-Depends: debhelper (>= 7.0.50~), python, rsync
+Standards-Version: 3.9.1
+
+
+Package: openerp-addons-web
+Section: net
+Architecture: all
+Depends:  ${misc:Depends}
+Description: OpenERP module: web
+  OpenERP Web core module.
+  This module provides the core of the OpenERP web client.
+
+Package: openerp-addons-web-calendar
+Section: net
+Architecture: all
+Depends:  openerp-addons-web,
+  ${misc:Depends}
+Description: OpenERP module: web_calendar
+  OpenERP Web calendar view.
+
+Package: openerp-addons-web-dashboard
+Section: net
+Architecture: all
+Depends:  openerp-addons-web,
+  ${misc:Depends}
+Description: OpenERP module: web_dashboard
+  OpenERP Web dashboard view.
+
+Package: openerp-addons-web-diagram
+Section: net
+Architecture: all
+Depends:  openerp-addons-web,
+  ${misc:Depends}
+Description: OpenERP module: web_diagram
+  Openerp web Diagram view
+
+Package: openerp-addons-web-gantt
+Section: net
+Architecture: all
+Depends:  openerp-addons-web,
+  ${misc:Depends}
+Description: OpenERP module: web_gantt
+  OpenERP Web gantt chart view.
+
+Package: openerp-addons-web-graph
+Section: net
+Architecture: all
+Depends:  openerp-addons-web,
+  ${misc:Depends}
+Description: OpenERP module: web_graph
+  Openerp web graph view
+
+Package: openerp-addons-web-hello
+Section: net
+Architecture: all
+Depends:  ${misc:Depends}
+Description: OpenERP module: web_hello
+  OpenERP Web example module.
+
+Package: openerp-addons-web-kanban
+Section: net
+Architecture: all
+Depends:  openerp-addons-web,
+  ${misc:Depends}
+Description: OpenERP module: web_kanban
+  OpenERP Web kanban view.
+
+Package: openerp-addons-web-mobile
+Section: net
+Architecture: all
+Depends:  ${misc:Depends}
+Description: OpenERP module: web_mobile
+  OpenERP Web mobile.
+
+Package: openerp-addons-web-process
+Section: net
+Architecture: all
+Depends:  openerp-addons-web-diagram,
+  ${misc:Depends}
+Description: OpenERP module: web_process
+  OpenERP Web process view.
+
+Package: openerp-addons-web-rpc
+Section: net
+Architecture: all
+Depends:  ${misc:Depends}
+Description: OpenERP module: web_rpc
+  Openerp web web
+
+Package: openerp-addons-web-tests
+Section: net
+Architecture: all
+Depends:  ${misc:Depends}
+Description: OpenERP module: web_tests
+  OpenERP Web test suite.
+
