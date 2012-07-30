@@ -3,7 +3,8 @@
 HOST = 127.0.0.1
 PORT = 8080
 
-all: run
+all:
+	@true
 
 run:
 	python openerp-web.py -a ${HOST} -p ${PORT}
@@ -12,7 +13,8 @@ release:
 	python setup.py sdist
 
 install:
-	python setup.py install
+	@mkdir -p ${DESTDIR}/usr/share/pyshared/openerp/
+	@cp -R addons ${DESTDIR}/usr/share/pyshared/openerp/
 
 clean:
 	@find . -name '*.pyc' -exec rm -f {} +
